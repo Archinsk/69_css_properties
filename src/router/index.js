@@ -19,6 +19,11 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+  {
+    path: "/borders",
+    name: "borders",
+    component: () => import("../views/BordersView.vue"),
+  },
 ];
 
 const router = new VueRouter({
